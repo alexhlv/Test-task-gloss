@@ -79,4 +79,90 @@ table {
 body {
   font-family: 'Clear Sans', 'Roboto', sans-serif; }
 
+/* container and size */
+/* flex-items */
+/* indents*/
+/* navigation and link */
+/* content */
+/* dropdown-list */
+/* button */
+/* box-shadow */
+.header {
+  max-width: 1155px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 17px;
+  padding-right: 0;
+  padding-bottom: 19px;
+  padding-left: 0; }
+  .header__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 64px; }
+  .header__content {
+    padding-right: 53px; }
+  .header__description {
+    font-family: 'Clear Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #3A4047;
+    padding-bottom: 11px; }
+  .header__schedule {
+    font-family: 'Clear Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #3A4047; }
+  .header__settings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 20px; }
+  .header__personal-account {
+    padding-right: 28px; }
+  .header__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header__shopping-cart {
+    padding-left: 18px; }
+
 /*# sourceMappingURL=main.css.map */

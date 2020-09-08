@@ -1,31 +1,7 @@
-/* background and color */
-
-@mixin bg-black {
-    background-color: #343434;
-}
-
-@mixin bg-white {
-    background-color: #ffffff;
-}
-
-@mixin text-black {
-    color: #343434;
-}
-
-@mixin text-white {
-    color: #ffffff;
-}
-
-/* display */
-
-@mixin display-block {
-    display: block;
-}
-
 /* container and size */
 
 @mixin container {
-    max-width: 1200px;
+    max-width: 1155px;
     margin: 0 auto;
 }
 
@@ -41,18 +17,22 @@
 
 /* flex-items */
 
+@mixin d-flex {
+    display: flex;
+}
+
 @mixin flex-container($horisontal, $vertical) {
     display: flex;
     justify-content: $horisontal;
     align-items: $vertical;
 }
 
-// @mixin flex-container-column {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: $horisontal;
-//     align-items: $vertical;
-// }
+@mixin flex-container-column($horisontal, $vertical) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $horisontal;
+    align-items: $vertical;
+}
 
 /* indents*/
 

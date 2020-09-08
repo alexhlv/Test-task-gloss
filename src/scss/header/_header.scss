@@ -1,0 +1,56 @@
+@import '../mixins';
+
+.header {
+    @include container;
+    @include flex-container(flex-start, center);
+    @include padding(17px, 0, 19px, 0);
+
+    &__info {
+        @include flex-container(space-between, center);
+        padding-left: 64px;
+    }
+
+    &__content {
+        padding-right: 53px;
+    }
+
+    &__description {
+        font-family: 'Clear Sans';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #3A4047;
+        padding-bottom: 11px;
+    }
+    
+    &__schedule {
+        font-family: 'Clear Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #3A4047;
+    }
+
+    &__settings {
+        @include flex-container-column(flex-end, center);
+    }
+
+    &__data {
+        @include d-flex;
+        padding-bottom: 20px;
+    }
+
+    &__personal-account {
+        padding-right: 28px;
+    }
+
+    &__contacts {
+        @include flex-container(flex-end, center);
+    }
+
+    &__shopping-cart {
+        padding-left: 18px;
+    }
+}
