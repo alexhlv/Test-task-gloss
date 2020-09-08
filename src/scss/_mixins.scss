@@ -1,0 +1,186 @@
+/* background and color */
+
+@mixin bg-black {
+    background-color: #343434;
+}
+
+@mixin bg-white {
+    background-color: #ffffff;
+}
+
+@mixin text-black {
+    color: #343434;
+}
+
+@mixin text-white {
+    color: #ffffff;
+}
+
+/* display */
+
+@mixin display-block {
+    display: block;
+}
+
+/* container and size */
+
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin size-min-max($width, $height) {
+    max-width: $width;
+    min-height: $height;
+}
+
+/* flex-items */
+
+@mixin flex-container($horisontal, $vertical) {
+    display: flex;
+    justify-content: $horisontal;
+    align-items: $vertical;
+}
+
+// @mixin flex-container-column {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: $horisontal;
+//     align-items: $vertical;
+// }
+
+/* indents*/
+
+@mixin margin($m-top, $m-right, $m-bottom, $m-left) {
+    margin-top: $m-top;
+    margin-right: $m-right;
+    margin-bottom: $m-bottom;
+    margin-left: $m-left;
+}
+
+@mixin padding($p-top, $p-right, $p-bottom, $p-left) {
+    padding-top: $p-top;
+    padding-right: $p-right;
+    padding-bottom: $p-bottom;
+    padding-left: $p-left;
+}
+
+/* navigation and link */
+
+@mixin nav-item {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    padding-top: 20px;
+    padding-right: 24px;
+}
+
+@mixin nav-link {
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+@mixin nav-line-hover {
+    content: "";
+    display: none;
+    // display: block;
+    width: 100%;
+    height: 6px;
+    background-color: #1bab4c;
+    position: absolute;
+    top: calc(100% - 55px);
+    left: 0;
+}
+
+/* content */
+
+@mixin overflow {
+    overflow: hidden;
+}
+
+@mixin content {
+    position: relative;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+/* dropdown-list */
+
+@mixin dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+@mixin dropdown-list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+}
+
+@mixin dropdown-list-link {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+@mixin dropdown-list-link-hover {
+    background-color: #fff;
+    color: #1bab4c;
+}
+
+/* button */
+
+@mixin button-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+@mixin button-green {
+    color: #fff;
+    background-color: #1bab4c;
+    text-decoration: none;
+    box-shadow: 0px 10px 15px rgba(27, 171, 76, 0.25);
+    border-radius: 3px;
+}
+
+@mixin button-green-hover {
+    background-color: #1bab4c;
+}
+
+@mixin button-green-svg {
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+}
+
+@mixin button-default {
+    color: #c4c4c4;
+    text-decoration: none;
+}
+
+@mixin button-default-hover {
+    color: #1bab4c;
+}
+
+/* box-shadow */
