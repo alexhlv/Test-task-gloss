@@ -266,7 +266,7 @@ body {
 /* flex-items */
 /* indents*/
 .baner {
-  background-image: url(/public/images/fon.jpg);
+  background-image: url(./public/images/fon.jpg);
   background-size: 1920px, cover;
   background-repeat: no-repeat;
   background-position: center center;
