@@ -1,0 +1,41 @@
+@import '../mixins';
+
+.about-us {
+    @include container;
+    @include flex-container-column(center, center);
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: #e8edf2;
+        position: absolute;
+        right: -97px;
+        bottom: 0;
+        left: -382px;
+    }
+    
+    &__title {
+        font-family: 'Clear Sans';
+        font-size: 36px;
+        line-height: 42px;
+        color: #3A4047;
+        @include padding(32px, 0, 13px, 0);
+    }
+
+	&__slogan {
+        font-family: 'Clear Sans';
+        font-size: 24px;
+        line-height: 28px;
+        color: #3A4047;
+    }
+
+	&__desc {
+        font-family: 'Clear Sans';
+        font-size: 14px;
+        line-height: 16px;
+        color: #3A4047;
+        @include padding(34px, 0, 13px, 0);
+    }
+}

@@ -1,0 +1,72 @@
+@import '../mixins';
+
+.products {
+    @include container;
+    // @include flex-container-column(space-between, center);
+
+    &__title {
+        font-family: 'Clear Sans';
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: #3A4047;
+        @include padding(29px, 0, 44px, 0);
+    }
+
+    &__block {
+        @include flex-container(space-between, flex-start);
+    }
+    
+    &__iner {
+        min-height: 351px;
+        @include flex-container(flex-start, flex-start);
+        @include padding(30px, 30px, 30px, 30px);
+        border: 1px solid #dce1e6;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    }
+    
+    &__logo {
+        @include padding(0, 40px, 0, 0);
+    }
+    
+    &__iner-block {
+        // min-height: 240px;
+    }
+
+    &__subtitle {
+        font-family: 'Clear Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #3A4047;
+        padding-bottom: 24px;
+    }
+
+    &__box {
+        @include flex-container(space-between, flex-start);
+    }
+    
+    &__list {
+
+    }
+    
+    &__item {
+        font-family: 'Clear Sans';
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__link {
+        color: #3A4047;
+        text-decoration: none;
+    }
+}
+
+.products__iner + .products__iner {
+    padding-left: 30px;
+}
+
+.products__item + .products__item {
+    padding-top: 30px;
+}

@@ -1,0 +1,77 @@
+@import '../mixins';
+
+.baner {
+    background: {
+        image: url(/public/images/fon.jpg);
+        size: 1920px, cover;
+        repeat: no-repeat;
+        position: center center;
+    }
+    @include flex-container-column(center, center);
+    position: relative;
+
+    &__message {
+        width: 108px;
+        height: 108px;        
+        background: #1ab0ce;
+        border-radius: 50%;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+        position: absolute;
+        right: 0%;
+        bottom: 0%;
+        @include flex-container-column(center, center);
+
+        & svg {
+            width: 23px;
+            height: 23px;
+        }
+
+        & span {
+            font-family: Clear Sans;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            color: #ffffff;
+        }
+    }
+
+    &__title {
+        font-family: 'Clear Sans';
+        font-size: 57px;
+        line-height: 67px;
+        color: #ffffff;
+        @include padding(125px, 0, 25px, 0);
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 120px;
+            height: 2px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 200px;
+            left: calc(50% - 63px);
+        } 
+    }
+    
+    &__text {
+        font-family: 'Clear Sans';
+        font-size: 24px;
+        line-height: 28px;
+        color: #ffffff;
+        @include padding(0, 0, 27px, 0);
+    }
+    
+    &__button {
+        font-family: 'Clear Sans';
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        background-color: #1AB0CE;
+        border-radius: 2px;
+        border: none;
+        @include padding(12px, 22px, 15px, 22px);
+        @include margin(0, 0, 141px, 0);
+    }
+}

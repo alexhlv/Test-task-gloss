@@ -19,52 +19,346 @@
 	<link rel="stylesheet" href="./public/styles/main.css">
 </head>
 <body>
-	<section>
-		<header class="header">
+	<header class="header">
+		<div class="header__promo">
 			<img src="./public/images/logo.png" alt="logo" class="logo">
-			<div class="header__info">
-				<div class="header__content">
-					<p class="header__description">
-						Качественная оперативная цифровая,
-						<br>
-						широкоформатная и сувенирная полиграфия!
-					</p>
-					<p class="header__schedule">Работаем с 9 до 18, вс и сб выходные</p>
+			<div class="header__content">
+				<p class="header__description">
+					Качественная оперативная цифровая,
+					<br>
+					широкоформатная и сувенирная полиграфия!
+				</p>
+				<p class="header__schedule">Работаем с 9 до 18, вс и сб выходные</p>
+			</div>
+			<div class="header__personal-account">
+				<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12.5556 13.9999V12.5555C12.5556 10.96 11.2622 9.6666 9.66667 9.6666H3.88889C2.2934 9.6666 1 10.96 1 12.5555V13.9999" stroke="#1AB0CE" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M6.7778 6.77778C8.37329 6.77778 9.66669 5.48438 9.66669 3.88889C9.66669 2.2934 8.37329 1 6.7778 1C5.18232 1 3.88892 2.2934 3.88892 3.88889C3.88892 5.48438 5.18232 6.77778 6.7778 6.77778Z" stroke="#1AB0CE" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				Личный кабинет	
+			</div>
+			<div class="header__settings">
+				<div class="header__data">
+					
+					<div>maket@test-vertka.ua</div>
 				</div>
-				<div class="header__settings">
-					<div class="header__data">
-						<div class="header__personal-account">
-							<svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M12.5556 13.9999V12.5555C12.5556 10.96 11.2622 9.6666 9.66667 9.6666H3.88889C2.2934 9.6666 1 10.96 1 12.5555V13.9999" stroke="#1AB0CE" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M6.7778 6.77778C8.37329 6.77778 9.66669 5.48438 9.66669 3.88889C9.66669 2.2934 8.37329 1 6.7778 1C5.18232 1 3.88892 2.2934 3.88892 3.88889C3.88892 5.48438 5.18232 6.77778 6.7778 6.77778Z" stroke="#1AB0CE" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-							Личный кабинет	
-						</div>
-						<div>maket@test-vertka.ua</div>
-					</div>
-					<div class="header__contacts">
-						<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1H9C6.23858 1 4 3.23858 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.44772 8.44772 5 9 5H12V1Z" stroke="#3D76B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path fill-rule="evenodd" clip-rule="evenodd" d="M20.8881 15.9201V18.9201C20.8904 19.4832 20.6552 20.0213 20.2402 20.402C19.8252 20.7827 19.269 20.9708 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66195 16.3148 5.61346 14.2663 4.07812 11.8501C2.3881 9.2413 1.33637 6.27109 1.00812 3.1801C0.957597 2.62097 1.1444 2.06635 1.52289 1.65172C1.90138 1.23709 2.43672 1.00063 2.99812 1.0001H5.99812C7.00199 0.990218 7.85762 1.72607 7.99812 2.7201C8.12475 3.68016 8.35957 4.62283 8.69812 5.5301C8.97286 6.26097 8.79714 7.0849 8.24812 7.6401L6.97812 8.9101C8.40168 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.8033 13.0911 15.6272 12.9154 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C20.1737 14.032 20.9133 14.9049 20.8881 15.9201Z" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-						<span>(044) 331-40-42</span>
-						<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M9 1L5 5L1 1" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>									
-					</div>
+				<div class="header__contacts">
+					<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1H9C6.23858 1 4 3.23858 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.44772 8.44772 5 9 5H12V1Z" stroke="#3D76B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.8881 15.9201V18.9201C20.8904 19.4832 20.6552 20.0213 20.2402 20.402C19.8252 20.7827 19.269 20.9708 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66195 16.3148 5.61346 14.2663 4.07812 11.8501C2.3881 9.2413 1.33637 6.27109 1.00812 3.1801C0.957597 2.62097 1.1444 2.06635 1.52289 1.65172C1.90138 1.23709 2.43672 1.00063 2.99812 1.0001H5.99812C7.00199 0.990218 7.85762 1.72607 7.99812 2.7201C8.12475 3.68016 8.35957 4.62283 8.69812 5.5301C8.97286 6.26097 8.79714 7.0849 8.24812 7.6401L6.97812 8.9101C8.40168 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.8033 13.0911 15.6272 12.9154 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C20.1737 14.032 20.9133 14.9049 20.8881 15.9201Z" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<nav id="main-nav">
+						<ul>
+						<li>
+							<a href="#">(044) 331-40-42
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9 1L5 5L1 1" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</a>
+							<ul class="submenu">
+								<li>
+									<img src="./public/images/mts.png" alt="mts">
+									<span>(099) 485-54-18</span>
+								</li>
+								<li>
+									<img src="./public/images/kyivstar.png" alt="kyivstar">
+									<span>(096) 497-88-03</span>
+								</li>
+								<li>
+									<img src="./public/images/mts.png" alt="">
+									<span>(063) 271-16-81</span>
+								</li>
+							</ul>
+							</li>
+						</ul>
+					</nav>							
 				</div>
-				<svg class="header__shopping-cart" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			</div>
+			<div class="header__shopping-cart">
+				<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M16 46C18.2091 46 20 44.2091 20 42C20 39.7909 18.2091 38 16 38C13.7909 38 12 39.7909 12 42C12 44.2091 13.7909 46 16 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 					<path d="M40 46C42.2091 46 44 44.2091 44 42C44 39.7909 42.2091 38 40 38C37.7909 38 36 39.7909 36 42C36 44.2091 37.7909 46 40 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 					<path d="M11.34 12H46L42.64 28.78C42.2625 30.6805 40.5772 32.0371 38.64 32H17.5C15.479 32.0171 13.7627 30.524 13.5 28.52L10.46 5.48C10.1992 3.49119 8.50583 2.00304 6.5 2H2" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 				</svg>					
 			</div>
-		</header>
-		<nav>
-
+		</div>
+		<nav class="navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#">Главная</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Продукция</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Новости</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">База знаний</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">О нас</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">Контакты</a>
+				</li>
+				<li class="navigation__item">
+					<a href="#">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.5 16C12.6421 16 16 12.6421 16 8.5C16 4.35786 12.6421 1 8.5 1C4.35786 1 1 4.35786 1 8.5C1 12.6421 4.35786 16 8.5 16Z" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M19 19L13.8 13.8" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>														
+					</a>
+				</li>
+			</ul>
 		</nav>
+	</header>
+	<section class="baner">
+		<h1 class="baner__title">Оперативная печать полиграфии от 1 дня!</h1>
+		<span class="baner__text">Доставка в любой город Украины</span>
+		<button class="baner__button">Сделать заказа</button>
+		<div class="baner__message">
+			<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9993 18.2199V21.6823C24.0019 22.3323 23.7299 22.9532 23.25 23.3926C22.7701 23.832 22.1269 24.0491 21.4783 23.9906C17.9197 23.6047 14.5015 22.3911 11.4982 20.4474C8.7041 18.6754 6.33516 16.3112 4.55964 13.5226C2.60525 10.5116 1.38899 7.08359 1.00939 3.51614C0.950964 2.87083 1.16698 2.23072 1.60469 1.75218C2.04239 1.27363 2.66147 1.00072 3.3107 1.00011H6.77999C7.9409 0.98871 8.93038 1.83798 9.09286 2.98524C9.23929 4.09329 9.51085 5.18125 9.90236 6.22838C10.2201 7.07191 10.0169 8.02284 9.38197 8.66362L7.9133 10.1294C9.55954 13.0188 11.9567 15.4112 14.8519 17.0542L16.3206 15.5885C16.9626 14.9548 17.9154 14.752 18.7606 15.0691C19.8098 15.4598 20.9 15.7309 22.0102 15.877C23.1731 16.0407 24.0284 17.0482 23.9993 18.2199Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			<span>
+				Перезвоните
+				<br>
+				мне сейчас!
+			</span>			
+		</div>
 	</section>
+	<section class="products">
+		<h2 class="products__title">Продукция</h2>
+		<div class="products__block">
+			<div class="products__iner">
+				<img class="products__logo" src="./public/images/products/blank-page.png" alt="blank-page">
+				<div class="products__iner-block">
+					<h3 class="products__subtitle">Офисная продукция</h3>
+					<ul class="products__list">
+						<li class="products__item">
+							<a class="products__link" href="#">Визитки</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Конверты</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Папки</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Книги</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Блокноты</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Фирменные бланки</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="products__iner">
+				<img class="products__logo" src="./public/images/products/road-map.png" alt="">
+				<div class="products__iner-block">
+					<h3 class="products__subtitle">Рекламная продукция</h3>
+					<div class="products__box">
+						<ul class="products__list">
+							<li class="products__item">
+								<a class="products__link" href="#">Листовки</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Флаера</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Буклеты</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Календари</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Блокноты</a>
+							</li>
+						</ul>
+						<ul class="products__list">
+							<li class="products__item">
+								<a class="products__link" href="#">Плакаты</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Баннеры</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Магниты</a>
+							</li>
+							<li class="products__item">
+								<a class="products__link" href="#">Наклейки</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="products__iner">
+				<img class="products__logo" src="./public/images/products/e-reader.png" alt="">
+				<div class="products__iner-block">
+					<h3 class="products__subtitle">Для бизнеса</h3>
+					<ul class="products__list">
+						<li class="products__item">
+							<a class="products__link" href="#">Каталоги</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Журналы</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Дисконтные карты</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Бейджи</a>
+						</li>
+						<li class="products__item">
+							<a class="products__link" href="#">Гарантиныйные наклейки</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about-us">
+		<h2 class="about-us__title">О нас</h2>
+		<p class="about-us__slogan">Оперативная печать полиграфии от 1 дня!</p>
+		<p class="about-us__desc">
+			Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м.
+			<br>
+			Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных
+			<br>
+			веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д.
+			<br>
+			Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.</p>
+	</section>
+	<section class="news">
+		<h2 class="news__title">Новости</h2>
+		<div class="news__list">
+			<div class="news__item item-news">
+				<span class="item-news__date">14 марта 2018</span>
+				<p class="item-news__desc">
+					Оазисное земледелие поднимает культурный
+					<br>
+					субэкваториальный климат, там же можно с
+					<br>
+					палками
+				</p>
+			</div>
+			<div class="news__item item-news">
+				<span class="item-news__date">14 марта 2018</span>
+				<p class="item-news__desc">
+					Оазисное земледелие поднимает культурный
+					<br>
+					субэкваториальный климат, там же можно с
+					<br>
+					палками
+				</p>
+			</div>
+			<div class="news__item item-news">
+				<span class="item-news__date">14 марта 2018</span>
+				<p class="item-news__desc">
+					Оазисное земледелие поднимает культурный
+					<br>
+					субэкваториальный климат, там же можно с
+					<br>
+					палками
+				</p>
+			</div>
+		</div>
+		<button class="news__button">Смотреть все новости</button>
+	</section>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__box footer__box_vertical">
+				<img src="./public/images/logo.png" alt="logo" class="logo">
+				<span class="footer__copyright">2018 — Все права защищены</span>
+			</div>
+			<div class="footer__box ">
+				<p class="footer__desc">
+					Качественная оперативная цифровая,
+					<br>
+					широкоформатная и сувенирная
+					<br>
+					полиграфия!
+				</p>
+				<span class="footer__timetable">Работаем с 9 до 18, вс и сб выходные</span>
+			</div>
+			<nav class="footer__box nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a  class="nav__link" href="#">Главная</a>
+					</li>
+					<li class="nav__item">
+						<a  class="nav__link" href="#">Продукция</a>
+					</li>
+					<li class="nav__item">
+						<a  class="nav__link" href="#">Доставка и оплата</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="footer__box nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<a  class="nav__link" href="#">Новости</a>
+					</li>
+					<li class="nav__item">
+						<a  class="nav__link" href="#">База знаний</a>
+					</li>
+					<li class="nav__item">
+						<a  class="nav__link" href="#">О нас</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="footer__box">
+				<div class="footer__contacts">
+					<svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M12 1H9C6.23858 1 4 3.23858 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.44772 8.44772 5 9 5H12V1Z" stroke="#3D76B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M20.8881 15.9201V18.9201C20.8904 19.4832 20.6552 20.0213 20.2402 20.402C19.8252 20.7827 19.269 20.9708 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66195 16.3148 5.61346 14.2663 4.07812 11.8501C2.3881 9.2413 1.33637 6.27109 1.00812 3.1801C0.957597 2.62097 1.1444 2.06635 1.52289 1.65172C1.90138 1.23709 2.43672 1.00063 2.99812 1.0001H5.99812C7.00199 0.990218 7.85762 1.72607 7.99812 2.7201C8.12475 3.68016 8.35957 4.62283 8.69812 5.5301C8.97286 6.26097 8.79714 7.0849 8.24812 7.6401L6.97812 8.9101C8.40168 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.8033 13.0911 15.6272 12.9154 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C20.1737 14.032 20.9133 14.9049 20.8881 15.9201Z" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<nav id="main-nav">
+						<ul>
+							<li>
+								<a href="#">(044) 331-40-42
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 1L5 5L1 1" stroke="#3A4047" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+								<!-- <ul class="submenu">
+									<li>
+										<img src="./public/images/mts.png" alt="mts">
+										<span>(099) 485-54-18</span>
+									</li>
+									<li>
+										<img src="./public/images/kyivstar.png" alt="kyivstar">
+										<span>(096) 497-88-03</span>
+									</li>
+									<li>
+										<img src="./public/images/mts.png" alt="">
+										<span>(063) 271-16-81</span>
+									</li>
+								</ul> -->
+							</li>
+						</ul>
+					</nav>							
+				</div>
+				<nav class="nav nav_right">
+					<a class="nav__link" href="#">Контакты</a>
+				</nav>
+				<div class="footer__commercial">
+					<img class="footer__icon" src="./public/images/icon.png" alt="icon">
+					<span class="footer__slogan">Глянец — Разработка сайтов</span>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
