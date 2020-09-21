@@ -293,7 +293,7 @@ body {
             box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
     position: absolute;
     right: 0%;
-    bottom: 0%;
+    bottom: -11%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -311,7 +311,7 @@ body {
       width: 23px;
       height: 23px; }
     .baner__message span {
-      font-family: Clear Sans;
+      font-family: 'Clear Sans';
       font-size: 14px;
       line-height: 16px;
       text-align: center;
@@ -513,8 +513,7 @@ body {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  position: relative; }
+          align-items: center; }
   .news__title {
     font-family: 'Clear Sans';
     font-size: 36px;
@@ -568,38 +567,6 @@ body {
     .news__button:hover {
       color: #fff;
       background-color: #1ab0ce; }
-  .news__message {
-    width: 108px;
-    height: 108px;
-    background: #1ab0ce;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-    position: absolute;
-    right: 0%;
-    bottom: 0%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .news__message svg {
-      width: 23px;
-      height: 23px; }
-    .news__message span {
-      font-family: Clear Sans;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      color: #ffffff; }
   .news .item-news {
     border-top: 1px solid #ffffff; }
     .news .item-news:hover {
@@ -633,7 +600,8 @@ body {
 .footer {
   background-color: #f7f7f7;
   -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.05); }
+          box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.05);
+  position: relative; }
   .footer__container {
     max-width: 1155px;
     margin: 0 auto;
@@ -691,6 +659,38 @@ body {
     font-size: 14px;
     text-align: center;
     color: #3A4047; }
+  .footer__message {
+    width: 108px;
+    height: 108px;
+    background: #1ab0ce;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: -35%;
+    right: 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .footer__message svg {
+      width: 23px;
+      height: 23px; }
+    .footer__message span {
+      font-family: 'Clear Sans';
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #ffffff; }
   .footer .nav__item {
     font-family: Roboto;
     font-size: 14px;

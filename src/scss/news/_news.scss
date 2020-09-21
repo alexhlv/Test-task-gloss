@@ -3,7 +3,6 @@
 .news {
     @include container;
     @include flex-container-column(center, center);
-    position: relative;
 
     &__title {
         font-family: 'Clear Sans';
@@ -36,31 +35,6 @@
         &:hover {
             color: #fff;
             background-color: #1ab0ce;
-        }
-    }
-
-    &__message {
-        width: 108px;
-        height: 108px;        
-        background: #1ab0ce;
-        border-radius: 50%;
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-        position: absolute;
-        right: 0%;
-        bottom: 0%;
-        @include flex-container-column(center, center);
-
-        & svg {
-            width: 23px;
-            height: 23px;
-        }
-
-        & span {
-            font-family: Clear Sans;
-            font-size: 14px;
-            line-height: 16px;
-            text-align: center;
-            color: #ffffff;
         }
     }
     
