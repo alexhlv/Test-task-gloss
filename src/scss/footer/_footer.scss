@@ -17,6 +17,10 @@
             @include padding(18px, 0, 32px, 0);
             @include flex-container-column(space-between, stretch);
         }
+
+        &_last {
+            padding-top: 10px;
+        }
     }
 
     &__copyright {
@@ -41,6 +45,146 @@
         color: #3A4047;
     }
 
+    & .menu {
+        &__item {
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .menu__item + .menu__item {
+            padding-top: 16px;
+        }
+        
+        &__link {
+            color: #3A4047;
+        }
+    }
+
+    &__contacts {
+        @include flex-container(space-between, center);
+
+        & > a > img {
+            @include padding(0, 21px, 0, 0);
+        }
+    }
+
+    .nav {
+        width: 220px;
+        margin-top: 0;
+    
+        & ul {
+            list-style: none;
+        }
+    
+        & a {
+            text-decoration: none;
+            display: block;
+            color: #3A4047;
+        }
+    
+        .dropdown {
+            & > .dropdown__toggle {
+                display: inline-block;
+                position: relative;
+    
+                & span {
+                    @include padding(0, 5px, 0, 10px);
+                }
+            }
+    
+            & > .dropdown__toggle > .dropdown__link {
+                font-family: 'Clear Sans';
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: #3A4047;
+                position: relative;
+                @include padding(15px, 0, 15px, 0);
+            }
+    
+            & > .dropdown__toggle > .dropdown__link:before {
+                content: "";
+                position: absolute;
+                z-index: 5;
+                left: 87%;
+                top: 80%;
+                width: 28px;
+                height: 28px;
+                background: white;
+                transform: rotate(135deg);
+                opacity: 0;
+                transition: .3s;
+            }
+    
+            & .dropdown__toggle:hover .dropdown__link:before {
+                transform: rotate(135deg);
+                opacity: 1;
+            }
+    
+            & > .dropdown__toggle:hover .dropdown__list {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+    
+            .dropdown__list {
+                position: absolute;
+                z-index: 4;
+                left: 50%;
+                top: 60%;
+                width: 220px;
+                @include padding(0, 0, 0, 0);
+                margin-top: 13px;
+                background: white;
+                box-shadow: 0 0 30px rgba(0,0,0,.2);
+                visibility: hidden;
+                opacity: 0;
+                transform: translate(-50%, 20px);
+                transition: .3s;
+            }
+    
+            .dropdown__list .dropdown__link {
+                @include flex-container(flex-start, center);
+                font-family: 'Clear Sans';
+                font-size: 16px;
+                line-height: 19px;
+                color: #3A4047;
+                @include padding(5px, 10px, 5px, 25px);
+                transition: .3s linear;
+            }
+    
+            .dropdown__list .dropdown__link:hover {
+                background: #e8e8e8;
+            }
+        }
+    }
+
+    & .menu_right {
+        font-family: Roboto;
+        font-size: 14px;
+        text-align: right;
+        text-decoration-line: underline;
+        padding-bottom: 33px;
+        margin-right: 30px;
+    }
+    
+    &__commercial {
+        text-align: right;
+        margin-right: 30px;
+    }
+    
+    &__icon {
+
+    }
+    
+    &__slogan {
+        font-family: Cuprum;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: #3A4047;
+    }
+    
     &__message {
         width: 108px;
         height: 108px;        
@@ -63,22 +207,6 @@
             line-height: 16px;
             text-align: center;
             color: #ffffff;
-        }
-    }
-
-    & .nav {
-        &__item {
-            font-family: Roboto;
-            font-size: 14px;
-            line-height: 21px;
-        }
-
-        .nav__item + .nav__item {
-            padding-top: 16px;
-        }
-        
-        &__link {
-            color: #3A4047;
         }
     }
 }

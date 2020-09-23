@@ -1,0 +1,97 @@
+.nav {
+    width: 220px;
+    margin-top: 0;
+
+    & ul {
+        list-style: none;
+    }
+
+    & a {
+        text-decoration: none;
+        display: block;
+        color: #3A4047;
+    }
+
+    .dropdown {
+        & > .dropdown__toggle {
+            display: inline-block;
+            position: relative;
+
+            & span {
+                @include padding(0, 5px, 0, 10px);
+            }
+        }
+
+        & > .dropdown__toggle > .dropdown__link {
+            font-family: 'Clear Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: #3A4047;
+            position: relative;
+            @include padding(15px, 0, 15px, 0);
+        }
+
+        & > .dropdown__toggle > .dropdown__link:before {
+            content: "";
+            position: absolute;
+            z-index: 5;
+            left: 87%;
+            top: 120%;
+            width: 28px;
+            height: 28px;
+            background: white;
+            transform: rotate(135deg);
+            opacity: 0;
+            transition: .3s;
+        }
+
+        & .dropdown__toggle:hover .dropdown__link:before {
+            transform: rotate(135deg);
+            opacity: 1;
+        }
+
+        & > .dropdown__toggle:hover .dropdown__list {
+            visibility: visible;
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+
+        .dropdown__list {
+            position: absolute;
+            z-index: 4;
+            left: 50%;
+            top: 110%;
+            width: 220px;
+            @include padding(15px, 0, 15px, 0);
+            margin-top: 13px;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,.2);
+            visibility: hidden;
+            opacity: 0;
+            transform: translate(-50%, 20px);
+            transition: .3s;
+        }
+
+        .dropdown__list .dropdown__link {
+            @include flex-container(flex-start, center);
+            font-family: 'Clear Sans';
+            font-size: 16px;
+            line-height: 19px;
+            color: #3A4047;
+            @include padding(5px, 10px, 5px, 25px);
+            transition: .3s linear;
+
+            & span {
+                font-family: 'Clear Sans';
+                font-size: 16px;
+                // line-height: 19px;
+                color: #3A4047;
+            }
+        }
+
+        .dropdown__list .dropdown__link:hover {
+            background: #e8e8e8;
+        }
+    }
+}

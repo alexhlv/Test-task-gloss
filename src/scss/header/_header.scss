@@ -39,94 +39,46 @@
     &__data {
         @include d-flex;
         padding-bottom: 20px;
+        padding-left: 35px;
     }
 
     &__personal-account {
-        padding-right: 28px;
+        width: 150px;
     }
 
     &__contacts {
-        @include flex-container(flex-end, center);
+        @include flex-container(space-between, center);
+
+        & > a > img {
+            @include padding(0, 21px, 0, 0);
+        }
     }
 
-    #main-nav a {
-        color: #f6f7f8;
-        background: #254441;
-        height: 30px;
-        font-family: lato;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    &__link {
         text-decoration: none;
-        transition: background 0.4s;
     }
 
-    #main-nav a:hover {
-        background: #305753;
-    }
-
-    #main-nav {
-    }
-
-    #main-nav ul {
-        list-style: none;
-        display: flex;
-    }
-    
-    #main-nav li {
-        width: 100%;
-        text-align: center;
-        position: relative;
-    }
-    
-    #main-nav li:hover .submenu > li {
-        display: block;
-        flex-direction: column;
-        top: 0px;
-    }
-
-    .submenu li {
-        display: none;
-        position: absolute;
-        top: 0px;
-    }
-
-    .submenu {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 100%;
-    }
-
-    .submenu li {
-        position: relative;
-    }
-    
-    .submenu li:hover .submenu-2 li {
-        display: block;
-    }
-
-    .submenu-2 li {
-        display: none;
-    }
-
-    .submenu-2 {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0px;
-        left: 100%;
-        width: 120px;
-    }
-    
-    svg {
-        margin-left: 8px;
-        color: #eee;
-        font-size: 12px;
-    }
+    @import 'dropdown/dropdown';
 
     &__shopping-cart {
-        padding-left: 18px;
+        // padding-left: 18px;
+        position: relative;
+
+        &::before {
+            content: "3";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #1ab0ce;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-family: 'Clear Sans';
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+        }
     }
 }
