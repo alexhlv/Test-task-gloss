@@ -58,6 +58,10 @@
         
         &__link {
             color: #3A4047;
+
+            &:hover {
+                color: #1ab0ce;
+            }
         }
     }
 
@@ -150,7 +154,7 @@
                 font-size: 16px;
                 line-height: 19px;
                 color: #3A4047;
-                @include padding(5px, 10px, 5px, 25px);
+                @include padding(0, 10px, 0, 12px);
                 transition: .3s linear;
             }
     
@@ -172,10 +176,6 @@
     &__commercial {
         text-align: right;
         margin-right: 30px;
-    }
-    
-    &__icon {
-
     }
     
     &__slogan {
