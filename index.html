@@ -21,38 +21,42 @@
 <body>
 	<header class="header">
 		<div class="header__promo">
-			<a class="header__link" href="#">
-				<img class="logo" src="./public/images/logo.png" alt="logo">
-			</a>
-			<div class="header__content">
-				<p class="header__description">
-					Качественная оперативная цифровая,
-					<br>
-					широкоформатная и сувенирная полиграфия!
-				</p>
-				<p class="header__schedule">Работаем с 9 до 18, вс и сб выходные</p>
-			</div>
-			<div class="header__personal-account">
-				<a class="header__link" href="#">
-					<img src="./public/images/user.png" alt="user icon">
-				Личный кабинет	
-				</a>
-			</div>
-			<div class="header__settings">
-				<div class="header__data">
+			<div class="header__wrapper">
+				<div class="header__item1">
+					<a class="header__link" href="#">
+						<img class="logo" src="./public/images/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="header__item2">
+					<p class="header__description">
+						Качественная оперативная цифровая,
+						<br>
+						широкоформатная и сувенирная полиграфия!
+					</p>
+				</div>
+				<div class="header__item3">
+					<p class="header__schedule">Работаем с 9 до 18, вс и сб выходные</p>
+				</div>
+				<div class="header__item4">
+					<a class="header__link" href="#">
+						<img src="./public/images/user.png" alt="user icon">
+						<span>Личный кабинет</span>	
+					</a>
+				</div>
+				<div class="header__item5">
 					<a class="header__link" href="#">maket@test-vertka.ua</a>
 				</div>
-				<div class="header__contacts">
-					<a class="header__link" href="#">
+				<div class="header__item6">
+					<a class="header__link header__link_inline" href="#">
 						<img src="./public/images/facebook.png" alt="facebook">
 					</a>
 					<nav class="nav">
 						<ul class="dropdown">
 							<li class="dropdown__toggle">
 								<a class="dropdown__link" href="#">
-									<img src="./public/images/phone.png" alt="phone">
+									<img class="dropdown__icon dropdown__icon_left" src="./public/images/phone.png" alt="phone">
 									<span>(044) 331-40-42</span>
-									<img src="./public/images/arr-right-grey.png" alt="arr-right">
+									<img class="dropdown__icon dropdown__icon_right" src="./public/images/arr-right-grey.png" alt="arr-right">
 								</a>
 								<ul class="dropdown__list">
 									<li class="dropdown__item">
@@ -78,15 +82,15 @@
 						</ul>
 					</nav>
 				</div>
-			</div>
-			<div class="header__shopping-cart">
-				<a class="header__link" href="#">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M16 46C18.2091 46 20 44.2091 20 42C20 39.7909 18.2091 38 16 38C13.7909 38 12 39.7909 12 42C12 44.2091 13.7909 46 16 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M40 46C42.2091 46 44 44.2091 44 42C44 39.7909 42.2091 38 40 38C37.7909 38 36 39.7909 36 42C36 44.2091 37.7909 46 40 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-						<path d="M11.34 12H46L42.64 28.78C42.2625 30.6805 40.5772 32.0371 38.64 32H17.5C15.479 32.0171 13.7627 30.524 13.5 28.52L10.46 5.48C10.1992 3.49119 8.50583 2.00304 6.5 2H2" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</a>					
+				<div class="header__item7">
+					<a class="header__link" href="#">
+						<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16 46C18.2091 46 20 44.2091 20 42C20 39.7909 18.2091 38 16 38C13.7909 38 12 39.7909 12 42C12 44.2091 13.7909 46 16 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M40 46C42.2091 46 44 44.2091 44 42C44 39.7909 42.2091 38 40 38C37.7909 38 36 39.7909 36 42C36 44.2091 37.7909 46 40 46Z" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M11.34 12H46L42.64 28.78C42.2625 30.6805 40.5772 32.0371 38.64 32H17.5C15.479 32.0171 13.7627 30.524 13.5 28.52L10.46 5.48C10.1992 3.49119 8.50583 2.00304 6.5 2H2" stroke="#1AB0CE" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
 		<nav class="navigation">

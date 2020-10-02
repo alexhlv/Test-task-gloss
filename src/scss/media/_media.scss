@@ -1,0 +1,33 @@
+@media (min-width: 1025px) and (max-width: 1300px) {
+    .header {
+        &__wrapper {
+            // @include container-full(1000px);
+            // display: inline-grid;
+        }
+    }
+
+    .navigation {
+        // display: inline-flex;
+        // @include flex-container-column(center, center);
+
+        &__list {
+            // @include flex-container-column(center, center);
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

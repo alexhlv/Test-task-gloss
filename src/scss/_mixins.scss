@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+@mixin container-full($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
 /* flex-items */
 
 @mixin d-flex {
